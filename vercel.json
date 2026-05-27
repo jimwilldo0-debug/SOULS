@@ -1,0 +1,21 @@
+{
+  "projectName": "souls-app",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".expo/web",
+  "env": {
+    "REACT_APP_API_URL": "http://localhost:3000/api",
+    "REACT_APP_ENV": "production",
+    "REACT_APP_ANALYTICS_ENABLED": "true",
+    "REACT_APP_FEATURE_BETA_EDITOR": "true",
+    "REACT_APP_FEATURE_CLOUD_SYNC": "true",
+    "REACT_APP_GIPHY_API_KEY": "@GIPHY_API_KEY"
+  },
+  "public": false,
+  "framework": "expo",
+  "regions": ["sfo1"],
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  }
+}
