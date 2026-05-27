@@ -1,7 +1,6 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": ".expo/web",
-  "framework": "expo",
   "regions": ["sfo1"],
   "git": {
     "deploymentEnabled": {
