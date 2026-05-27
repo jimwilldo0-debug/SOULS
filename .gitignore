@@ -1,0 +1,52 @@
+# Environment
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# Mobile
+.expo/
+.expo-shared/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+
+# Build
+dist/
+build/
+.next
+out/
+coverage/
+
+# Backend
+backend/dist/
+backend/node_modules/
+backend/.env
+
+# Docker
+.dockerignore
+
+# OS
+Thumbs.db
+.DS_Store

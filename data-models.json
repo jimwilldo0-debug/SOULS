@@ -1,0 +1,57 @@
+{
+  "User": {
+    "type": "object",
+    "properties": {
+      "id": { "type": "string" },
+      "email": { "type": "string", "format": "email" },
+      "displayName": { "type": "string" },
+      "dob": { "type": "string", "format": "date" },
+      "themePrefs": { "type": "object" },
+      "avatarUrl": { "type": "string", "format": "uri" },
+      "verified": { "type": "boolean" },
+      "createdAt": { "type": "string", "format": "date-time" }
+    },
+    "required": ["id","email","displayName","createdAt"]
+  },
+  "Post": {
+    "type": "object",
+    "properties": {
+      "id": { "type": "string" },
+      "userId": { "type": "string" },
+      "imageId": { "type": "string" },
+      "layers": {
+        "type": "array",
+        "items": { "type": "object" }
+      },
+      "caption": { "type": "string" },
+      "tags": { "type": "array", "items": { "type": "string" } },
+      "location": { "type": "object" },
+      "isWidgetReady": { "type": "boolean" },
+      "visibility": { "type": "string" },
+      "createdAt": { "type": "string", "format": "date-time" }
+    },
+    "required": ["id","userId","imageId","createdAt"]
+  },
+  "Asset": {
+    "type": "object",
+    "properties": {
+      "id": { "type": "string" },
+      "type": { "type": "string" },
+      "category": { "type": "string" },
+      "tags": { "type": "array", "items": { "type": "string" } },
+      "srcUrl": { "type": "string", "format": "uri" },
+      "metadata": { "type": "object" }
+    },
+    "required": ["id","type","srcUrl"]
+  },
+  "Theme": {
+    "type": "object",
+    "properties": {
+      "id": { "type": "string" },
+      "name": { "type": "string" },
+      "palette": { "type": "object" },
+      "fonts": { "type": "array", "items": { "type": "string" } },
+      "preview": { "type": "string", "format": "uri" }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "SOULS",
+    "slug": "souls-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTabletMode": false,
+      "bundleIdentifier": "com.soulsapp.souls",
+      "usesNonExemptEncryption": false
+    },
+    "android": {
+      "package": "com.soulsapp.souls",
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow SOULS to access your camera"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow SOULS to access your photos",
+          "savePhotosPermission": "Allow SOULS to save photos"
+        }
+      ]
+    ]
+  }
+}
