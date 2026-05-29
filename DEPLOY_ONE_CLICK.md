@@ -16,7 +16,7 @@
 - Select "jimwilldo0-debug/SOULS"
 
 ### Step 3: Configure
-- Project name: `souls-app` (or custom)
+- Project name: `` (or custom)
 - Framework: Expo (auto-detected)
 - Root directory: `./` (default)
 - Build command: `npm run build` (auto-detected)
