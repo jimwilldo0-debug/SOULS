@@ -3,17 +3,12 @@
   "outputDirectory": ".expo/web",
   "regions": ["sfo1"],
   "installCommand": "npm install",
-  "crons": [],
-  "functions": {},
   "git": {
     "deploymentEnabled": {
       "main": true
     }
   },
-  "env": [
-    {
-      "key": "NPM_FLAGS",
-      "value": "--legacy-peer-deps"
-    }
-  ]
+  "env": {
+    "NPM_FLAGS": "--legacy-peer-deps"
+  }
 }
